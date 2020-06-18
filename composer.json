@@ -1,5 +1,5 @@
 {
-    "name": "fesor/request-objects",
+    "name": "geeky/request-objects",
     "description": "Custom request objects for Symfony made to make life less painful",
     "type": "library",
     "license": "MIT",
@@ -7,6 +7,10 @@
         {
             "name": "Sergey Protko",
             "email": "fesors@gmail.com"
+        },
+        {
+            "name": "Mohamed Emad",
+            "email": "thegeekym@gmail.com"
         }
     ],
     "autoload": {
