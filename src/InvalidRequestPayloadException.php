@@ -3,8 +3,9 @@
 namespace Fesor\RequestObject;
 
 use Symfony\Component\Validator\ConstraintViolationListInterface;
+use Symfony\Component\Validator\Exception\ValidatorException;
 
-class InvalidRequestPayloadException extends \Exception
+class InvalidRequestPayloadException extends ValidatorException
 {
     private $requestObject;
 
@@ -18,8 +19,6 @@ class InvalidRequestPayloadException extends \Exception
      */
     public function __construct(RequestObject $requestObject, ConstraintViolationListInterface $errors)
     {
-        parent::__construct();
-
         $this->requestObject = $requestObject;
         $this->errors = $errors;
     }
