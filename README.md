@@ -175,6 +175,7 @@ public function getErrorResponse(ConstraintViolationListInterface $errors)
     ], 400);
 }
 ```
+## Exception Listner Handling
 
 If you need to handle the validaion exception from the exception itself you can take a look at this example [Excetion Example](https://github.com/TheGeekyM/symfony-object-request-validation/blob/master/examples/src/EventListener/ExceptionListener.php)
 
