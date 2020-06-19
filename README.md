@@ -7,7 +7,7 @@ Symfony Request Objects
 [![Total Downloads](https://poser.pugx.org/fesor/request-objects/downloads)](https://packagist.org/packages/fesor/request-objects)
 [![License](https://poser.pugx.org/fesor/request-objects/license)](https://packagist.org/packages/fesor/request-objects)
 
-**Note**: This library is taken from this library [fesor/request-objects](https://github.com/fesor/request-objects) but this library is working on symfony v5+ . with a few updates
+**Note**: The library is taken from this library [fesor/request-objects](https://github.com/fesor/request-objects) but this library is working on symfony v5+ . with a few updates
 
 ## Why?
 
