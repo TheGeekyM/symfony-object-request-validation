@@ -7,7 +7,7 @@ Symfony Request Objects
 [![Total Downloads](https://poser.pugx.org/fesor/request-objects/downloads)](https://packagist.org/packages/fesor/request-objects)
 [![License](https://poser.pugx.org/fesor/request-objects/license)](https://packagist.org/packages/fesor/request-objects)
 
-**Note**: This library is taken from this library [![fesor/request-objects](https://github.com/fesor/request-objects) but this library is working on symfony v5+ . with a few updates
+**Note**: This library is taken from this library [fesor/request-objects](https://github.com/fesor/request-objects) but this library is working on symfony v5+ . with a few updates
 
 ## Why?
 
@@ -176,7 +176,7 @@ public function getErrorResponse(ConstraintViolationListInterface $errors)
 }
 ```
 
-If you need to handle the validaion exception from the exception itself you can take a look at this example [![Excetion Example](https://github.com/TheGeekyM/symfony-object-request-validation/blob/master/examples/src/EventListener/ExceptionListener.php)
+If you need to handle the validaion exception from the exception itself you can take a look at this example [Excetion Example](https://github.com/TheGeekyM/symfony-object-request-validation/blob/master/examples/src/EventListener/ExceptionListener.php)
 
 So the first thing you should create the `src/EventListener/ExceptionListener.php` file or anywhere you want then paste the example file in it and you can customize the response as you want,
 
