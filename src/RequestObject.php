@@ -7,7 +7,7 @@ use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\ConstraintViolation;
 use Symfony\Component\Validator\ConstraintViolationListInterface;
 
-class RequestObject implements ErrorResponseProvider
+class RequestObject
 {
     private $payload;
 
@@ -58,21 +58,5 @@ class RequestObject implements ErrorResponseProvider
     public function all()
     {
         return $this->payload;
-    }
-
-    /**
-     * @param ConstraintViolationListInterface $errors
-     *
-     * @return JsonResponse|\Symfony\Component\HttpFoundation\Response
-     */
-    public function getErrorResponse(ConstraintViolationListInterface $errors)
-    {
-        return new JsonResponse([
-            'errors' => array_map(function (ConstraintViolation $violation) {
-                return [
-                    $violation->getPropertyPath() => $violation->getMessage(),
-                ];
-            }, iterator_to_array($errors))
-        ], 422);
     }
 }
