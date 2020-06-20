@@ -3,7 +3,7 @@
 namespace Fesor\RequestObject\Bundle;
 
 use Fesor\RequestObject\RequestObjectBinder;
-use Symfony\Component\HttpKernel\Event\FilterControllerEvent;
+use Symfony\Component\HttpKernel\Event\ControllerEvent;
 
 class RequestObjectEventListener
 {
@@ -19,7 +19,10 @@ class RequestObjectEventListener
         $this->requestBinder = $requestBinder;
     }
 
-    public function onKernelController(FilterControllerEvent $event)
+    /**
+     * @param ControllerEvent $event
+     */
+    public function onKernelController(ControllerEvent $event)
     {
         $request = $event->getRequest();
         $controller = $event->getController();
