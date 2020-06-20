@@ -26,16 +26,13 @@ First of all, we need to install this package via composer:
 composer require geeky/request-objects
 ```
 
-And register the bundle:
+And register the bundle in `config/bundels.php`:
 
 ```
-    public function registerBundles()
-    {
-        $bundles = [
-            // ...
-            new \Fesor\RequestObject\Bundle\RequestObjectBundle(),
-        ];
-    }
+    return [
+     ....
+     Fesor\RequestObject\Bundle\RequestObjectBundle::class => ['all' => true],
+    ];
 ```
 
 Bundle doesn't require any additional configuration, but you could also specify an error response
